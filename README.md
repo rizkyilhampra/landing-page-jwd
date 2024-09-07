@@ -1,7 +1,8 @@
-composer install
-copy file .env.example to .env
-php artisan key:generate
-php artisan migrate
-
-php artisan serve / buka dengan laragon
-
+- jalankan `git clone https://github.com/rizkyilhampra/landing-page-jwd` di path `/c/laragon/www`
+- masuk ke folder landing-page-jwd atau dengan cli `cd landing-page-jwd`
+- `composer install`
+- copy file `.env.example` paste menjadi `.env` atau melalui cli `cp .env.example .env`
+- `php artisan key:generate`
+- modifikasi konfigurasi database di file `.env`
+- `php artisan migrate --seed`
+- `php artisan serve` atau buka melalui laragon `http://localhost/landing-page-jwd` atau `landing-page-jwd.test`
